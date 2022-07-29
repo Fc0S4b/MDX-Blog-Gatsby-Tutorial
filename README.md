@@ -1,5 +1,5 @@
-# GATSBY MDX BLOG
-
+# LEARNING GATSBY MDX BLOG
+## From John Smilga's course on [udemy](https://www.udemy.com/share/101XUA3@beRiWtNm-hMz3_t2Pz5WSGiYyA9ejcfMLpiaT5b79cJBS_OGVltBZuBHS8jJfXlyoQ==/)
 ## Initially Recorded with V2
 
 #### Changes
