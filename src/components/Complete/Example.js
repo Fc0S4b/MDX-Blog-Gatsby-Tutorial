@@ -1,7 +1,7 @@
 import React from 'react'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/vsDark'
-
+// remove vsDark for explore more themes options
 const exampleCode = `
 (function someDemo() {
   var test = "Hello World!";
@@ -9,9 +9,17 @@ const exampleCode = `
 })();
 `
 
-const Example = () => {
+const Example = props => {
+  // console.log(props) //props.children.props.children.trim() //trim por eliminar espacio blanco final
+  const className = props.children.props.className
+  const language = className.replace(/language-/, '')
   return (
-    <Highlight {...defaultProps} code={exampleCode} language="jsx">
+    <Highlight
+      {...defaultProps}
+      code={props.children.props.children.trim()}
+      language={language}
+      theme={theme}
+    >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre className={className} style={style}>
           {tokens.map((line, i) => (
